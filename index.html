@@ -109,6 +109,12 @@
             margin-bottom: 20px; /* Margem inferior */
         }
 
+        .button-group.horizontal {
+            flex-direction: row; /* Mudando para linha para botões horizontais */
+            justify-content: center; /* Centralizando os botões */
+            gap: 20px; /* Espaçamento entre os botões */
+        }
+
         .button-group a {
             padding: 12px 20px; /* Ajustando o padding para melhor adaptação ao texto */
             color: #fff;
@@ -130,7 +136,10 @@
         .planilha-button {
             background-color: #34a853; /* Verde do Google Planilhas */
             padding: 12px 20px; /* Mantendo o mesmo padding para consistência */
-            margin-top: 20px; /* Espaço acima do botão Planilha */
+        }
+
+        .pague-button {
+            background-color: #ff9500; /* Cor para o botão Pague com Bitcoin */
         }
 
         .other-button {
@@ -142,7 +151,8 @@
         }
 
         .button-group a:hover,
-        .planilha-button:hover {
+        .planilha-button:hover,
+        .pague-button:hover {
             transform: translateY(-3px);
         }
 
@@ -243,12 +253,18 @@
             </a>
         </div>
 
-        <a href="https://go.hotmart.com/J80409809N" target="_blank" class="planilha-button">
-            <span class="emoji">📊</span>
-            Planilha Pools de Liquidez
-        </a>
+        <div class="button-group horizontal">
+            <a href="https://go.hotmart.com/J80409809N" target="_blank" class="planilha-button">
+                <span class="emoji">📊</span>
+                Planilha Pools de Liquidez
+            </a>
+            <a href="https://pay.bitcoinheiros.com/apps/49fyKvyTUmWCsT554HDG83PCnvBv/pos" target="_blank" class="pague-button">
+                <span class="emoji">⚡</span>
+                Pague com Bitcoin
+            </a>
+        </div>
 
-        <div class="email">Doe sats para:</div>
+        <div class="email">Doe para:</div>
         <div id="qrcode"></div>
         <div class="email">emersonsatoshi@strike.me</div>
     </div>
