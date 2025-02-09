@@ -53,23 +53,6 @@
             margin-bottom: 20px;
         }
 
-        .content a {
-            display: inline-block;
-            padding: 14px 25px;
-            background-color: #ff9500;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 15px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .content a:hover {
-            background-color: #e77e00;
-        }
-
         footer {
             background-color: #2d3e50;
             color: #fff;
@@ -81,12 +64,18 @@
             font-size: 1rem;
         }
 
-        .button-group {
-            margin-top: 30px;
+        /* Estilo para o QR code */
+        #qrcode {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center; /* Centraliza o QR code */
+            display: inline-block; /* Faz o QR code se comportar como um elemento inline */
         }
 
-        .button-group a {
-            margin: 10px;
+        .email {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
         }
 
     </style>
@@ -112,19 +101,31 @@
         </div>
 
         <div class="button-group">
-            <!-- Doação em Sats -->
-            <a href="mailto:emersonalves@bipa.app" target="_blank">Doe Bitcoin para emersonsatoshi@strike.me</a>
-        <img src="https://raw.githubusercontent.com/usuario/repositorio/main/Doe.png" alt="Imagem de Doação" style="max-width: 100%; height: auto;">
-            </div>
-        <div class="button-group">
             <!-- Perguntar ao Prof Emerson Alves -->
             <a href="https://ask.arata.se/emersonalves" target="_blank">Pergunte ao Prof. Emerson Alves</a>
         </div>
+
+        <!-- Doação em Sats -->
+        <div class="email">Doe para:</div>
+        <div id="qrcode"></div>
+        <div class="email">emersonsatoshi@strike.me</div>
     </div>
 
     <footer>
         <p>&copy; 2025 Prof Emerson Alves. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Incluir a biblioteca para gerar o QR code -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script>
+        // Gerar o QR code para o email "emersonsatoshi@strike.me"
+        var email = "emersonsatoshi@strike.me";
+        new QRCode(document.getElementById("qrcode"), {
+            text: email,
+            width: 128,
+            height: 128
+        });
+    </script>
 
 </body>
 </html>
