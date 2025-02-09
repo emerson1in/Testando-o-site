@@ -110,15 +110,16 @@
         }
 
         .button-group a {
-            padding: 12px 25px;
+            padding: 12px 20px; /* Ajustando o padding para melhor adaptação ao texto */
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             display: flex; /* Flex para alinhar o ícone e o texto */
             align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
             transition: background-color 0.3s, transform 0.3s;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            width: 100%; /* Fazendo os botões ocuparem 100% da largura */
+            width: auto; /* Ajustando a largura para se adaptar ao texto */
             max-width: 300px; /* Largura máxima dos botões */
         }
 
@@ -128,13 +129,20 @@
 
         .planilha-button {
             background-color: #34a853; /* Verde do Google Planilhas */
+            padding: 12px 20px; /* Mantendo o mesmo padding para consistência */
+            margin-top: 20px; /* Espaço acima do botão Planilha */
         }
 
         .other-button {
             background-color: #ff9500; /* Cor original para outros botões */
         }
 
-        .button-group a:hover {
+        .x-button {
+            background-color: #000; /* Cor preta para o botão do X */
+        }
+
+        .button-group a:hover,
+        .planilha-button:hover {
             transform: translateY(-3px);
         }
 
@@ -168,7 +176,7 @@
         }
 
         .youtube-icon, .bitcoin-icon {
-            width: 24px; /* Ajustando o tamanho do ícone do YouTube */
+            width: 24px; /* Ajustando o tamanho do ícone */
             height: 24px;
             margin-right: 8px; /* Espaço entre o ícone e o texto */
         }
@@ -224,17 +232,21 @@
         <div class="button-group">
             <a href="https://www.youtube.com/@emerson_alves" target="_blank" class="youtube-button">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" class="youtube-icon">
-                Visite meu Canal no YouTube!
+                Canal no YouTube
             </a>
-            <a href="https://go.hotmart.com/J80409809N" target="_blank" class="planilha-button">
-                <span class="emoji">📊</span>
-                Acesse a Planilha Pools de Liquidez
+            <a href="https://x.com/EmersonAlvesIn1" target="_blank" class="x-button">
+                Siga-me no X
             </a>
             <a href="https://ask.arata.se/emersonalves" target="_blank" class="other-button">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin" class="bitcoin-icon">
-                Pergunte ao Prof. Emerson Alves
+                Pergunte
             </a>
         </div>
+
+        <a href="https://go.hotmart.com/J80409809N" target="_blank" class="planilha-button">
+            <span class="emoji">📊</span>
+            Planilha Pools de Liquidez
+        </a>
 
         <div class="email">Doe para:</div>
         <div id="qrcode"></div>
