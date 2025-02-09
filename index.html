@@ -48,6 +48,94 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página do Prof. Emerson Alves, com materiais exclusivos e opções de doação em Bitcoin.">
+    <title>Prof Emerson Alves</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff7b00, #ff3d00); /* Gradiente mais vibrante */
+            color: #fff;
+            padding: 50px 20px; /* Aumentando o padding para mais espaço */
+            text-align: center; /* Centralizando o texto */
+            border-bottom: 4px solid #ff9500;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative; /* Para a pseudo-elemento */
+            display: flex; /* Usando flexbox */
+            align-items: center; /* Alinhando verticalmente */
+            justify-content: center; /* Centralizando horizontalmente */
+        }
+
+        header img {
+            width: 50px; /* Tamanho do logotipo do Bitcoin */
+            height: 50px; /* Tamanho do logotipo do Bitcoin */
+            margin-right: 15px; /* Espaço entre o logotipo e o título */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff; /* Mantendo a cor branca */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+        }
+
+        header p {
+            font-size: 1.5rem; /* Aumentando o tamanho do subtítulo */
+            color: #000; /* Mudando a cor do subtítulo para preto */
+            margin-top: 10px; /* Espaço acima do subtítulo */
+        }
+
+        /* Efeito de brilho no cabeçalho */
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1); /* Brilho sutil */
+            filter: blur(10px);
+            z-index: 0; /* Fica atrás do texto */
+        }
+
+        /* Emojis e figurinhas */
+        .emoji {
+            font-size: 2rem; /* Tamanho dos emojis */
+            margin: 0 5px; /* Espaço entre os emojis */
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative; /* Para a pseudo-elemento */
+            z-index: 1; /* Fica acima do brilho */
+        }
 
         .content h2 {
             color: #4a90e2;
@@ -134,7 +222,11 @@
 <body>
 
     <header>
-        <h1>Prof. Emerson Alves</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Logo do Bitcoin" class="bitcoin-logo"> <!-- Logotipo do Bitcoin -->
+        <div>
+            <h1>Prof. Emerson Alves</h1>
+            <p>Seu guia em Bitcoin e finanças digitais <span class="emoji">🚀💰📈</span></p>
+        </div>
     </header>
 
     <div class="content">
