@@ -5,55 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prof Emerson Alves</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+        /* Reset básico */
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        .content {
-            padding: 40px;
-        }
-        .content h2 {
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
+            margin: 0;
         }
-        .content p {
-            font-size: 18px;
-            color: #555;
-        }
-        .content a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
+
+        header {
+            background-color: #2d3e50;
+            color: #fff;
+            padding: 30px 0;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            border-bottom: 4px solid #ff9500;
         }
-        .youtube-link {
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #2d3e50;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .content a {
             display: inline-block;
-            padding: 12px 20px;
-            background-color: #ff0000;
-            color: white;
-            border-radius: 5px;
+            padding: 14px 25px;
+            background-color: #ff9500;
+            color: #fff;
             text-decoration: none;
-            margin-top: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
-        .youtube-link:hover {
-            background-color: #cc0000;
+
+        .content a:hover {
+            background-color: #e77e00;
         }
+
+        footer {
+            background-color: #2d3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        .button-group {
+            margin-top: 30px;
+        }
+
+        .button-group a {
+            margin: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -63,9 +98,28 @@
     </header>
 
     <div class="content">
-        <h2>Bem-vindo ao site do Prof. Emerson Alves!</h2>
-        <p>Acesse o canal abaixo.</p>
-        <a href="https://www.youtube.com/@emerson_alves" class="youtube-link" target="_blank">Visite meu Canal no YouTube!</a>
+        <h2>Bem-vindo ao meu site!</h2>
+        <p>Este é um espaço onde você pode acessar materiais exclusivos, como planilhas e vídeos, além de apoiar o meu trabalho com doações em Bitcoin.</p>
+
+        <div class="button-group">
+            <!-- Canal YouTube -->
+            <a href="https://www.youtube.com/@emerson_alves" target="_blank">Visite meu Canal no YouTube!</a>
+        </div>
+
+        <div class="button-group">
+            <!-- Planilha de Pools de Liquidez -->
+            <a href="https://go.hotmart.com/J80409809N" target="_blank">Acesse a Planilha Pools de Liquidez</a>
+        </div>
+
+        <div class="button-group">
+            <!-- Doação em Sats -->
+            <a href="mailto:emersonalves@bipa.app" target="_blank">Doe Bitcoin para emersonalves@bipa.app</a>
+        </div>
+
+        <div class="button-group">
+            <!-- Perguntar ao Prof Emerson Alves -->
+            <a href="https://ask.arata.se/emersonalves" target="_blank">Pergunte ao Prof. Emerson Alves</a>
+        </div>
     </div>
 
     <footer>
