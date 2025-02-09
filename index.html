@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -63,10 +63,23 @@
 
         .button-group a {
             padding: 10px 20px;
-            background-color: #ff9500;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            display: flex; /* Flex para alinhar o ícone e o texto */
+            align-items: center; /* Centraliza verticalmente */
+        }
+
+        .youtube-button {
+            background-color: #c4302b; /* Vermelho do YouTube */
+        }
+
+        .planilha-button {
+            background-color: #34a853; /* Verde do Google Planilhas */
+        }
+
+        .other-button {
+            background-color: #ff9500; /* Cor original para outros botões */
         }
 
         footer {
@@ -94,6 +107,17 @@
             color: #333;
         }
 
+        .youtube-icon {
+            width: 24px; /* Tamanho do ícone do YouTube */
+            height: 24px;
+            margin-right: 8px; /* Espaço entre o ícone e o texto */
+        }
+
+        .bitcoin-icon {
+            width: 24px; /* Tamanho do logo do Bitcoin */
+            height: 24px;
+            margin-right: 8px; /* Espaço entre o logo e o texto */
+        }
     </style>
 </head>
 <body>
@@ -107,9 +131,18 @@
         <p>Este é um espaço onde você pode acessar materiais exclusivos, como planilhas e vídeos, além de apoiar o meu trabalho com doações em Bitcoin.</p>
 
         <div class="button-group">
-            <a href="https://www.youtube.com/@emerson_alves" target="_blank">Visite meu Canal no YouTube!</a>
-            <a href="https://go.hotmart.com/J80409809N" target="_blank">Acesse a Planilha Pools de Liquidez</a>
-            <a href="https://ask.arata.se/emersonalves" target="_blank">Pergunte ao Prof. Emerson Alves</a>
+            <a href="https://www.youtube.com/@emerson_alves" target="_blank" class="youtube-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" class="youtube-icon">
+                Visite meu Canal no YouTube!
+            </a>
+            <a href="https://go.hotmart.com/J80409809N" target="_blank" class="planilha-button">
+                <span class="emoji">📊</span>
+                Acesse a Planilha Pools de Liquidez
+            </a>
+            <a href="https://ask.arata.se/emersonalves" target="_blank" class="other-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin" class="bitcoin-icon">
+                Pergunte ao Prof. Emerson Alves
+            </a>
         </div>
 
         <div class="email">Doe para:</div>
