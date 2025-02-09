@@ -12,57 +12,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            background: linear-gradient(135deg, #4a90e2, #007acc); /* Gradiente no fundo */
-            color: #fff;
-            padding: 50px 0; /* Aumentando o padding para mais espaço */
-            text-align: center;
-            border-bottom: 4px solid #ff9500;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #fff; /* Mantendo a cor branca */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
-        }
-
-        .content {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página do Prof. Emerson Alves, com materiais exclusivos e opções de doação em Bitcoin.">
-    <title>Prof Emerson Alves</title>
-    <style>
-        /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
             font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
@@ -75,7 +25,7 @@
         header {
             background: linear-gradient(135deg, #ff7b00, #ff3d00); /* Gradiente mais vibrante */
             color: #fff;
-            padding: 50px 20px; /* Aumentando o padding para mais espaço */
+            padding: 30px 20px; /* Ajustando o padding para telas menores */
             text-align: center; /* Centralizando o texto */
             border-bottom: 4px solid #ff9500;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -83,27 +33,29 @@
             display: flex; /* Usando flexbox */
             align-items: center; /* Alinhando verticalmente */
             justify-content: center; /* Centralizando horizontalmente */
+            flex-direction: column; /* Mudando para coluna */
         }
 
         header img {
             width: 50px; /* Tamanho do logotipo do Bitcoin */
             height: 50px; /* Tamanho do logotipo do Bitcoin */
-            margin-right: 15px; /* Espaço entre o logotipo e o título */
+            margin-bottom: 15px; /* Espaço abaixo do logotipo */
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 2.5rem; /* Ajustando o tamanho do título para telas menores */
             font-weight: bold;
             text-transform: uppercase;
             color: #fff; /* Mantendo a cor branca */
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
-            margin-bottom: 10px; /* Espaço abaixo do título */
+            margin-bottom: 5px; /* Espaço abaixo do título */
         }
 
         header p {
-            font-size: 1.5rem; /* Aumentando o tamanho do subtítulo */
+            font-size: 1.2rem; /* Ajustando o tamanho do subtítulo */
             color: #000; /* Mudando a cor do subtítulo para preto */
             margin-top: 10px; /* Espaço acima do subtítulo */
+            text-align: center; /* Centralizando o subtítulo */
         }
 
         /* Efeito de brilho no cabeçalho */
@@ -121,12 +73,12 @@
 
         /* Emojis e figurinhas */
         .emoji {
-            font-size: 2rem; /* Tamanho dos emojis */
+            font-size: 1.5rem; /* Tamanho dos emojis ajustado */
             margin: 0 5px; /* Espaço entre os emojis */
         }
 
         .content {
-            padding: 50px 20px;
+            padding: 30px 20px; /* Ajustando o padding para telas menores */
             max-width: 900px;
             margin: 0 auto;
             text-align: center;
@@ -139,20 +91,21 @@
 
         .content h2 {
             color: #4a90e2;
-            font-size: 2.5rem;
+            font-size: 2rem; /* Ajustando o tamanho do título para telas menores */
             margin-bottom: 20px;
         }
 
         .content p {
-            font-size: 1.2rem;
+            font-size: 1rem; /* Ajustando o tamanho do texto para telas menores */
             color: #555;
             margin-bottom: 20px;
         }
 
         .button-group {
             display: flex;
-            justify-content: center; /* Centraliza os botões */
-            gap: 15px; /* Espaçamento entre os botões */
+            flex-direction: column; /* Mudando para coluna em telas menores */
+            align-items: center; /* Centralizando os botões */
+            gap: 10px; /* Espaçamento entre os botões */
             margin-bottom: 20px; /* Margem inferior */
         }
 
@@ -165,6 +118,8 @@
             align-items: center; /* Centraliza verticalmente */
             transition: background-color 0.3s, transform 0.3s;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%; /* Fazendo os botões ocuparem 100% da largura */
+            max-width: 300px; /* Largura máxima dos botões */
         }
 
         .youtube-button {
@@ -206,7 +161,7 @@
         }
 
         .email {
-            font-size: 1.2rem;
+            font-size: 1rem; /* Ajustando o tamanho do texto do e-mail */
             font-weight: bold;
             color: #333;
             margin-top: 10px; /* Margem superior para o texto do e-mail */
@@ -216,6 +171,39 @@
             width: 24px; /* Ajustando o tamanho do ícone do YouTube */
             height: 24px;
             margin-right: 8px; /* Espaço entre o ícone e o texto */
+        }
+
+        /* Media Queries para responsividade */
+        @media (min-width: 600px) {
+            header {
+                flex-direction: row; /* Mantendo a coluna em telas pequenas */
+            }
+
+            header img {
+                margin-bottom: 0; /* Removendo margem abaixo do logotipo */
+                margin-right: 15px; /* Espaço entre o logotipo e o título */
+            }
+
+            header h1 {
+                font-size: 3rem; /* Tamanho do título para telas maiores */
+            }
+
+            header p {
+                font-size: 1.5rem; /* Tamanho do subtítulo para telas maiores */
+            }
+
+            .button-group {
+                flex-direction: row; /* Mudando para linha em telas maiores */
+                justify-content: center; /* Centralizando os botões */
+            }
+
+            .content h2 {
+                font-size: 2.5rem; /* Tamanho do título para telas maiores */
+            }
+
+            .content p {
+                font-size: 1.2rem; /* Tamanho do texto para telas maiores */
+            }
         }
     </style>
 </head>
