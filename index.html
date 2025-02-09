@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página do Prof. Emerson Alves, com materiais exclusivos e opções de doação em Bitcoin.">
     <title>Prof Emerson Alves</title>
     <style>
         /* Reset básico */
@@ -53,6 +54,21 @@
             margin-bottom: 20px;
         }
 
+        .button-group {
+            display: flex;
+            justify-content: center; /* Centraliza os botões */
+            gap: 10px; /* Espaçamento entre os botões */
+            margin-bottom: 20px; /* Margem inferior */
+        }
+
+        .button-group a {
+            padding: 10px 20px;
+            background-color: #ff9500;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
         footer {
             background-color: #2d3e50;
             color: #fff;
@@ -68,8 +84,8 @@
         #qrcode {
             margin-top: 20px;
             margin-bottom: 10px;
-            text-align: center; /* Centraliza o QR code */
-            display: inline-block; /* Faz o QR code se comportar como um elemento inline */
+            text-align: center;
+            display: inline-block;
         }
 
         .email {
@@ -91,21 +107,11 @@
         <p>Este é um espaço onde você pode acessar materiais exclusivos, como planilhas e vídeos, além de apoiar o meu trabalho com doações em Bitcoin.</p>
 
         <div class="button-group">
-            <!-- Canal YouTube -->
             <a href="https://www.youtube.com/@emerson_alves" target="_blank">Visite meu Canal no YouTube!</a>
-        </div>
-
-        <div class="button-group">
-            <!-- Planilha de Pools de Liquidez -->
             <a href="https://go.hotmart.com/J80409809N" target="_blank">Acesse a Planilha Pools de Liquidez</a>
-        </div>
-
-        <div class="button-group">
-            <!-- Perguntar ao Prof Emerson Alves -->
             <a href="https://ask.arata.se/emersonalves" target="_blank">Pergunte ao Prof. Emerson Alves</a>
         </div>
 
-        <!-- Doação em Sats -->
         <div class="email">Doe para:</div>
         <div id="qrcode"></div>
         <div class="email">emersonsatoshi@strike.me</div>
@@ -115,10 +121,8 @@
         <p>&copy; 2025 Prof Emerson Alves. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Incluir a biblioteca para gerar o QR code -->
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <script>
-        // Gerar o QR code para o email "emersonsatoshi@strike.me"
         var email = "emersonsatoshi@strike.me";
         new QRCode(document.getElementById("qrcode"), {
             text: email,
