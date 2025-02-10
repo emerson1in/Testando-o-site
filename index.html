@@ -15,12 +15,11 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #000; /* Fundo padrão preto */
+            background-color: #000; /* Fundo preto */
             color: #fff; /* Texto branco */
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            transition: background-color 0.3s, color 0.3s; /* Transição suave */
         }
 
         header {
@@ -35,23 +34,6 @@
             align-items: center; /* Alinhando verticalmente */
             justify-content: center; /* Centralizando horizontalmente */
             flex-direction: column; /* Mudando para coluna */
-        }
-
-        .theme-toggle {
-            position: absolute; /* Para posicionar no canto superior direito */
-            top: 20px;
-            right: 20px;
-            background-color: #ff9900; /* Cor do botão */
-            color: #000; /* Texto preto */
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .theme-toggle:hover {
-            background-color: #e68a00; /* Cor do botão ao passar o mouse */
         }
 
         header img {
@@ -257,7 +239,6 @@
 <body>
 
     <header>
-        <button class="theme-toggle" id="themeToggle">Tema</button> <!-- Botão para trocar tema -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Logo do Bitcoin" class="bitcoin-logo"> <!-- Logotipo do Bitcoin -->
         <div>
             <h1>Prof. Emerson Alves</h1>
@@ -442,15 +423,7 @@
             width: 128,
             height: 128
         });
+    </script>
 
-        // Função para alternar o tema
-        document.getElementById("themeToggle").onclick = function() {
-            const body = document.body;
-            const currentBackground = window.getComputedStyle(body).backgroundColor;
-
-            if (currentBackground === 'rgb(0, 0, 0)') { // Se o fundo é preto
-                body.style.backgroundColor = '#fff'; // Muda para branco
-                body.style.color = '#000'; // Muda texto para preto
-                document.querySelectorAll('.content, footer').forEach(el => {
-                    el.style.backgroundColor = '#fff'; // Muda fundo da seção de conteúdo
-                    el.style.color = '#000'; // Muda texto para preto
+</body>
+</html>
